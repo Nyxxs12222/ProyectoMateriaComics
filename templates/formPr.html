@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Proveedor</title>
+    <link rel="stylesheet" href="../Static/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <img src="../Static/admin.jpg" alt="Foto del docente" class="profile-pic">
+            <p class="profile-name">Juan Pérez</p>
+            <p class="profile-role">Administrador</p>
+
+            <div class="nav-menu">
+                <button class="nav-item" onclick="window.location.href='inicio.html';"><i class="bi bi-house-door"></i> Inicio</button>
+                <button class="nav-item" onclick="window.location.href='productos.html';"><i class="bi bi-people"></i> Inventario</button>
+                <button class="nav-item" onclick="window.location.href='pedido.html';"><i class="bi bi-pencil-square"></i> Pedidos</button>
+                <button class="nav-item" onclick="window.location.href='clientes.html';"><i class="bi bi-person-circle"></i> Clientes</button>
+                <button class="nav-item" onclick="window.location.href='proveedores.html';"><i class="bi bi-person-lines-fill"></i> Proveedores</button>
+            </div>
+            
+            <button class="logout-btn" onclick="window.location.href='log.html';"><i class="bi bi-box-arrow-right"></i> Cerrar Sesión</button>
+        </div>
+
+        <div class="main-content">
+            <div class="top-bar">
+                <h2>Agregar Proveedor</h2>
+            </div>
+
+            <!-- Formulario de Proveedores -->
+            <div class="form-section">
+                <form class="form-container">
+
+                    <div class="form-group">
+                        <label for="nombre"><i class="bi bi-building"></i> Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre del proveedor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="bi bi-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder="Correo del proveedor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono"><i class="bi bi-telephone"></i> Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Teléfono del proveedor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion"><i class="bi bi-geo-alt"></i> Dirección</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="Dirección del proveedor" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn"><i class="bi bi-save"></i> Guardar</button>
+                        <button type="button" class="cancel-btn" onclick="window.history.back();"><i class="bi bi-x-circle"></i> Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

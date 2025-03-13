@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Personal</title>
+    <link rel="stylesheet" href="../Static/productos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <img src="../Static/admin.jpg" alt="Foto del administrador" class="profile-pic">
+            <p class="profile-name">Juan Pérez</p>
+            <p class="profile-role">Administrador</p>
+
+            <div class="nav-menu">
+                <button class="nav-item" onclick="window.location.href='inicio.html';"><i class="bi bi-house-door"></i> Inicio</button>
+                <button class="nav-item" onclick="window.location.href='productos.html';"><i class="bi bi-people"></i> Inventario</button>
+                <button class="nav-item" onclick="window.location.href='pedido.html';"><i class="bi bi-pencil-square"></i> Pedidos</button>
+                <button class="nav-item" onclick="window.location.href='clientes.html';"><i class="bi bi-person-circle"></i> Clientes</button>
+                <button class="nav-item" onclick="window.location.href='proveedores.html';"><i class="bi bi-person-lines-fill"></i> Proveedores</button>
+            </div>
+            
+            <button class="logout-btn" onclick="window.location.href='log.html';"><i class="bi bi-box-arrow-right"></i> Cerrar Sesión</button>
+        </div>
+
+        <div class="main-content">
+            <div class="top-bar">
+                <h2>Personal</h2>
+                <button class="add-product" onclick="window.location.href='formE.html';"><i class="bi bi-plus-circle"></i> Agregar Empleado</button>
+            </div>
+
+            <!-- Contenedor de búsqueda y botones -->
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Buscar por ID, número de empleado o nombre">
+                <button class="filter-btn"><i class="bi bi-funnel"></i> Aplicar Filtro</button>
+            </div>
+
+            <!-- Tabla de personal -->
+            <div class="product-table-container">
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Número de Empleado</th>
+                            <th>Nombre</th>
+                            <th>Permisos</th>
+                            <th>Contraseña</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>EMP-2024</td>
+                            <td>María López</td>
+                            <td>Administrador</td>
+                            <td>*************</td>
+                            <td>
+                                <i class="bi bi-pencil-square edit-icon"></i>
+                                <i class="bi bi-trash delete-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>EMP-2025</td>
+                            <td>Carlos Gómez</td>
+                            <td>Normal</td>
+                            <td>********</td>
+                            <td>
+                                <i class="bi bi-pencil-square edit-icon"></i>
+                                <i class="bi bi-trash delete-icon"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

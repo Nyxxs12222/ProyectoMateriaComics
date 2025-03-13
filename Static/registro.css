@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('comics-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: auto; /* Permite el scroll si el contenido es más grande */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Añadimos un poco de espacio para evitar que el contenido se pegue a los bordes */
+    overflow-y: auto; /* Permite el desplazamiento si es necesario */
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px; /* Aumentamos un poco el tamaño máximo */
+    height: auto; /* Ajustamos la altura automáticamente */
+    max-height: 700px; /* Limitar la altura máxima del formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Establecemos dos columnas */
+    gap: 20px; /* Espaciado entre las columnas */
+}
+
+form input, form select {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form input.full-width {
+    grid-column: span 2; /* Hacemos que algunos campos ocupen todo el ancho */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #AFF4C6;
+    color: #02542D;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #90E2A9;
+}
+
+.signup-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #02542D;
+    margin-top: 20px;
+}
+
+.signup-link .signup {
+    font-weight: 600;
+    color: #AFF4C6;
+    text-decoration: none;
+}
+
+.signup-link .signup:hover {
+    text-decoration: underline;
+}
